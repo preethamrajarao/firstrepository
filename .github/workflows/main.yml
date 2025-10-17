@@ -23,7 +23,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: release  # Your release branch name
+          ref: release/test  # Your release branch name
           token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0  # Fetch all history for all branches
       
